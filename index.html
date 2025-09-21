@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Náhodný odkaz</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // 🔗 Sem vlož své odkazy – každý do uvozovek a oddělit čárkou
+      const links = [
+        "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Michal+Hor%C3%A1k",
+        "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Michaela+Mal%C3%ADkov%C3%A1",
+        "hhttps://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Jana+Chv%C3%A1lov%C3%A1",
+        "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Kate%C5%99ina+Kozl%C3%ADkov%C3%A1",
+        "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Martin+Jure%C4%8Dka",
+        "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Silvie+Veverkov%C3%A1",
+        "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Dominik+H%C3%A1jek",
+        "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Petr+Barnet",
+        "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Tom%C3%A1%C5%A1+Bro%C5%BEek"
+
+      ];
+
+      // Vyber náhodný odkaz
+      const randomLink = links[Math.floor(Math.random() * links.length)];
+
+      // Automatické přesměrování
+      window.location.href = randomLink;
+    });
+  </script>
+</head>
+<body>
+  <p>Přesměrovávám vás na náhodný odkaz...</p>
+</body>
+</html>
