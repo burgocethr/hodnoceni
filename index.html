@@ -59,15 +59,11 @@
   <script>
     // Seznam předvyplněných URL pro každého manažera
     const formUrls = [
-      { name: "Michal Horák", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Michal+Hor%C3%A1k" },
-      { name: "Michaela Malíková", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Michaela+Mal%C3%ADkov%C3%A1" },
-      { name: "Jana Chválová", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Jana+Chv%C3%A1lov%C3%A1" },
-      { name: "Kateřina Kozlíková", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Kate%C5%99ina+Kozl%C3%ADkov%C3%A1" },
-      { name: "Martin Jurečka", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Martin+Jure%C4%8Dka" },
-      { name: "Silvie Veverková", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Silvie+Veverkov%C3%A1" },
-      { name: "Dominik Hájek", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Dominik+H%C3%A1jek" },
-      { name: "Petr Barnet", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Petr+Barnet" },
-      { name: "Tomáš Brožek", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Tom%C3%A1%C5%A1+Bro%C5%BEek" }
+      { name: "Michal Horák", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Michal+Hor%C3%A1k" + Date.now() },
+      { name: "Michaela Malíková", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Michaela+Mal%C3%ADkov%C3%A1" + Date.now() },
+      { name: "Jana Chválová", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Jana+Chv%C3%A1lov%C3%A1" + Date.now() },
+         { name: "Martin Jurečka", url: "https://docs.google.com/forms/d/e/1FAIpQLSe4QBgS5wgOTAWt1FcvEkGeigs9xaQUYwe5F_Av2UIakXsZUg/viewform?usp=pp_url&entry.517729293=Martin+Jure%C4%8Dka" + Date.now() },
+      // ... přidej další URL pro Manažer 4 až Manažer 20
     ];
 
     // Funkce pro náhodný výběr 3 URL
